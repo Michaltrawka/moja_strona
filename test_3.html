@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z tekstem na banerze</title>
+    <!-- Link do czcionki Inter z Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Styl, który ustawia czcionkę Inter dla całej strony -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Styl dla banera */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+        /* Styl dla obrazka w banerze */
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Styl dla tekstu na banerze */
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+        }
+        .left {
+            background-color: green;
+            width: 20%;
+            color: white;
+        }
+        .center {
+            background-color: white;
+            width: 60%;
+        }
+        .right {
+            background-color: blue;
+            width: 20%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sekcja banera z tekstem -->
+    <div class="banner">
+        <img src="https://drive.google.com/file/d/1nG3alfzbGeybH9wFKxEWk-L9s8ToKclm/view?usp=drive_link" alt="Baner z naprawą elektroniki">
+        <div class="banner-text">Naprawa elektroniki</div>
+    </div>
+
+    <!-- Tabela z 3 kolumnami -->
+    <table>
+        <tr>
+            <td class="left">
+                <!-- Dane firmy w kolumnie zielonej -->
+                <h2>Candas Sp. z o.o.</h2>
+                <p>
+                    Adres: <br>
+                    ul. Przykładowa 123 <br>
+                    00-001 Warszawa, Polska <br><br>
+
+                    Telefon: +48 123 456 789 <br>
+                    Email: biuro@candas.pl <br><br>
+
+                    NIP: 123-456-78-90 <br>
+                    REGON: 987654321 <br>
+                    KRS: 0000123456
+                </p>
+            </td>
+            <td class="center">
+                <!-- Opis produktu w kolumnie środkowej -->
+                <h2>INDRAMAT DDS02.2-W015</h2>
+                <p>
+                    INDRAMAT DDS02.2-W015 to zaawansowany, cyfrowy sterownik napędu, który został zaprojektowany z myślą o precyzyjnym sterowaniu silnikami w aplikacjach przemysłowych. 
+                    Urządzenie jest częścią serii DDS produkowanej przez firmę Indramat, znanej z solidnych i niezawodnych rozwiązań w dziedzinie automatyki przemysłowej. 
+                    Ten model sterownika DDS02.2-W015 jest wykorzystywany głównie do sterowania serwomotorami w wymagających środowiskach, takich jak linie produkcyjne, robotyka i maszyny CNC.
+                </p>
+                <h3>Kluczowe cechy:</h3>
+                <ul>
+                    <li>Model: DDS02.2-W015</li>
+                    <li>Typ produktu: Sterownik napędu</li>
+                    <li>Napięcie wejściowe: 24V DC</li>
+                    <li>Moc wyjściowa: 15A</li>
+                    <li>Obsługiwane silniki: Serwomotory firmy Indramat</li>
+                </ul>
+                <h3>Zalety:</h3>
+                <ul>
+                    <li>Wysoka niezawodność i precyzja sterowania</li>
+                    <li>Elastyczność dzięki modułowej konstrukcji</li>
+                    <li>Łatwa integracja z istniejącymi systemami</li>
+                </ul>
+            </td>
+            <td class="right">
+                <!-- Prawa kolumna -->
+                Prawa kolumna
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
